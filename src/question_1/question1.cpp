@@ -43,3 +43,15 @@ int binary_to_decimal(string binStr)
     }
     return(sum);
 }
+
+bool checkFor1and0(string binStr){
+    bool cont = true;
+    for(int i = binStr.size()-1; i >= 0; i--){
+        if(binStr[i] == '0' || binStr[i] == '1'){
+            cont = true;
+        } else {
+            return(false);
+        }
+    }
+    return(true);
+}
